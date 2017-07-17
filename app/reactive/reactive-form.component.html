@@ -1,0 +1,17 @@
+<form (ngSubmit)="processForm()" [formGroup]="form">
+    <div class="form-group">
+        <label for="name" class="control-label">Name:</label>
+        <input type="text" name="name" class="form-control" required formControlName="name">
+        <span class="help-block" *ngIf="nameError">{{ nameError }}</span>
+    </div>
+
+    <div class="form-group">
+        <label for="username" class="control-label">Userame:</label>
+        <input type="text" name="username" class="form-control" required formControlName="username">
+        <span class="help-block" *ngIf="usernameError">{{ usernameError }}</span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-success form-control" [disabled]="!form.valid">Save</button>
+    </div>
+</form>

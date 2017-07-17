@@ -6,12 +6,10 @@ import { Component } from '@angular/core';
     
   `],
   template: `
-    <div class="jumbotron text-center">
-      <h1>The App Lives!</h1>
-      <p>{{ message }}</p>
-    </div>
+    <h1>-------template dirven--------</h1>
+    <template-form></template-form>
+    <h1>-------reactive dirven--------</h1>
+    <reactive-form></reactive-form>
   `
 })
-export class AppComponent {
-  message = 'This is the sample message.';
-}
+export class AppComponent {}
